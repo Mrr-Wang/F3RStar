@@ -1,0 +1,12 @@
+# Compact F3RStar method knobs (no IO). Prefer configs/f3rstar.yaml for demos.
+# Method-specific defaults will be filled in after the paper is accepted.
+method: f3rstar
+camera_model: SIMPLE_PINHOLE
+intrinsics_mode: SHARED
+use_gt_intrinsics: false
+gt_intrinsics_path: null
+refine_intrinsics: true
+star_ratio: 1.0
+adaptive_stop: true
+seed: 42
+path_feedforward: checkpoints/pi3.safetensors

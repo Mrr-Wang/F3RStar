@@ -1,0 +1,9 @@
+# Combined view: 13 training + 12 test scenes; raw split directories remain separate.
+_base_: eth3d_train.yaml
+images_pattern: ../datasets/ETH3D/mvs/all_dslr_undistorted/{dataset}/images_resized/
+gt_pattern: ../datasets/ETH3D/mvs/all_dslr_undistorted/{dataset}/reconstruction_gt/
+output_pattern: results/eth3d_all/{dataset}
+benchmark:
+  datasets: null
+  continue_on_error: true
+  preload_models: true

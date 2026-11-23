@@ -1,0 +1,9 @@
+# Official 12-scene test split, with public camera-pose calibration.
+_base_: eth3d_train.yaml
+images_pattern: ../datasets/ETH3D/mvs/multi_view_test_dslr_undistorted/{dataset}/images_resized/
+gt_pattern: ../datasets/ETH3D/mvs/multi_view_test_dslr_undistorted/{dataset}/reconstruction_gt/
+output_pattern: results/eth3d_test/{dataset}
+benchmark:
+  datasets: null
+  continue_on_error: true
+  preload_models: true
